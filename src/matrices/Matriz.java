@@ -69,6 +69,12 @@ public class Matriz {
 
         }
     }
+    public static int[][] invertir (int[][] A) {
+    int det=1/determinante(matriz);
+    int[][] nmatriz=matrizAdjunta(matriz);
+    multiplicarMatriz(det,nmatriz);
+    return nmatriz;
+    }
    /**
     *  si no se cumple la condición se retorna una matriz vacía
     */
